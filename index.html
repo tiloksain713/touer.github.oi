@@ -1,0 +1,2599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  body {
+      position: relative; 
+  }
+
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <div class="ezy__nav1">
+    <nav class="navbar navbar-expand-lg   py-3 ">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">
+          Example.com
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span>
+          
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-4 mt-lg-0">
+            <li class="text-white nav-item"><a class=" fs-5 text-capitalize fw-bolder text-white nav-link active" href="#Home">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-5 text-capitalize fw-bolder" href="#Features">Features</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-5 text-capitalize fw-bolder" href="#city">city</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-5 text-capitalize fw-bolder" href="#servies">servies</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-5 text-capitalize fw-bolder" href="#testimoial"> testimonial</a></li>
+            <li class="nav-item"><a class="nav-link text-white fs-5 text-capitalize fw-bolder" href="#blog">blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <style>
+  .ezy__nav1 {
+    /* Bootstrap variables */
+    --bs-body-color: #000;
+    --bs-body-bg:white;
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+  
+    background-color: #061237;
+  }
+  
+  
+  /* Gray Block Style */
+  .gray .ezy__nav1,
+  .ezy__nav1.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: white;
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__nav1,
+  .ezy__nav1.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: white;
+    --bs-body-bg: rgb(30, 39, 53);
+  }
+  
+  /* Dark Block Style */
+  .dark .ezy__nav1,
+  .ezy__nav1.dark {
+    /* Bootstrap variables */
+    --bs-body-color:white;
+    --bs-body-bg: white;
+  
+  }
+  
+  .ezy__nav1 .navbar-brand {
+    font-weight: 800;
+    font-size: 30px;
+    color:blue;
+  }
+  
+  .ezy__nav1 .navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span {
+    display: flex;
+    align-items: center;
+    height: 32px;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span>span {
+    position: relative;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span>span,
+  .ezy__nav1 .navbar-toggler>span>span::before,
+  .ezy__nav1 .navbar-toggler>span>span::after {
+    height: 2px;
+    background-color:whitesmoke;
+    width: 25px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all .35s ease-in-out;
+  }
+  
+  .ezy__nav1 .navbar-toggler>span>span::before,
+  .ezy__nav1 .navbar-toggler>span>span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::before {
+    top: 7px;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="false"]>span>span::after {
+    bottom: 7px;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span {
+    background-color: transparent;
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .ezy__nav1 .navbar-toggler[aria-expanded="true"]>span>span::after {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  .ezy__nav1 .navbar-nav .nav-link {
+    color: var(--bs-body-color);
+    opacity: .6;
+  }
+  
+  .ezy__nav1 .navbar-nav .nav-link:hover,
+  .ezy__nav1 .navbar-nav .nav-link:focus,
+  .ezy__nav1 .navbar-nav .nav-link.active {
+    color: var(--bs-body-color);
+    opacity: 1;
+  }
+  
+  @media (min-width: 992px) {
+    .ezy__nav1 .navbar-nav .nav-link {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+
+
+
+  .navbar .navbar-nav .nav-item {
+  position: relative;
+  
+}
+
+
+/* SHIFT */
+.navbar .navbar-nav .nav-item {
+  position:relative;
+  z-index: 1;
+}
+.navbar .navbar-nav .nav-item:hover {
+  color: black;
+}
+.navbar .navbar-nav .nav-item:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: rgba(199, 109, 109, 0.11);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.navbar .navbar-nav .nav-item:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background:wheat;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+
+
+
+
+
+
+
+
+.c-item{
+  height: auto;
+
+}
+
+.c-img{
+  
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+
+.header__blog4-btn {
+        padding: 12px 30px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color:transparent;
+        border-color: white;
+      }
+      
+      .header__blog4-btn:hover {
+        color: #ffffff;
+        background-color: #172b4d;
+        border: whitesmoke;
+      }
+  
+
+
+  </style>
+
+<div id="Home" class="container-fluid">
+
+  
+<header>
+
+   <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner ">
+        <div class="carousel-item active c-item">
+          <img class="c-img" src="https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img" height="900px" width="100%">
+          <div class="carousel-caption   top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase  animate__animated animate__backInDown ">booking</p>
+            <h1 class="display-1 fw-bolder text-capitalize  animate__animated animate__backInLeft ">We had such a great time in LA!</h1>
+            <button  type="button" class="btn header__blog4-btn px-5 fs-3    animate__animated animate__backInUp ">book now</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img class="c-img" src="https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img"  height="900px" width="100%">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase  animate__animated animate__backInDown">booking</p>
+            <h1 class="display-1 fw-bolder text-capitalize   animate__animated animate__backInLeft">We had such a great time in LA!</h1>
+            <button  type="button" class="btn header__blog4-btn px-5  fs-3   animate__animated animate__backInUp ">book now</button>
+            
+          </div> 
+        </div>
+        <div class="carousel-item c-item">
+          <img class="c-img" src="https://images.pexels.com/photos/2091018/pexels-photo-2091018.jpeg?auto=compress&cs=tinysrgb&w=600" alt="img"  height="900px" width="100%">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase  animate__animated animate__backInDown">booking</p>
+            <h1 class="display-1 fw-bolder text-capitalize   animate__animated animate__backInLeft">We had such a great time in LA!</h1>
+            <button  type="button" class="btn header__blog4-btn px-5  fs-3   animate__animated animate__backInUp ">book now</button>
+          </div>  
+        </div>
+      </div>
+      
+        
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+</div>
+
+
+
+    
+    
+    <section >
+      <div class="container-fluid   booking pb-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #061237;">
+          <div class="container ">
+              <div class="  shadow" style="padding: 35px;" ">
+                  <div class="row g-2 ">
+                      <div class="col-md-10  mt-5">
+                          <div class="row g-2">
+                              <div class="col-md-3">
+                                  <div class="date" id="date1" data-target-input="nearest">
+                                      <input type="text" class="form-control datetimepicker-input"
+                                          placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="date" id="date2" data-target-input="nearest">
+                                      <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <select class="form-select">
+                                      <option selected>Adult</option>
+                                      <option value="1">Adult 1</option>
+                                      <option value="2">Adult 2</option>
+                                      <option value="3">Adult 3</option>
+                                  </select>
+                              </div>
+                              <div class="col-md-3">
+                                  <select class="form-select">
+                                      <option selected>Child</option>
+                                      <option value="1">Child 1</option>
+                                      <option value="2">Child 2</option>
+                                      <option value="3">Child 3</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-2  mt-5">
+                          <button class="btn  bg-white btn-white w-100">Submit</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </section>
+      </header>
+
+      </div>
+      
+      <!-- Booking End -->
+  
+
+   
+  
+  
+
+  <div id="Features" class="container">
+  
+<section class="ezy__featured25 light">
+  <div class="container">
+    <div class="row mb-5 text-center justify-content-center">
+      <div class="col-lg-7">
+        <h2 class="ezy__featured25-heading mb-4">Our Features</h2>
+        <p class="ezy__featured25-sub-heading mb-4">
+          Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis
+          eligendi qui.
+        </p>
+      </div>
+    </div>
+    <div class="row position-relative">
+      <div class="col-lg-4 mb-4 mb-lg-0 order-lg-2">
+        <div class="h-100">
+          <div
+            class="ezy__featured25-bg-holder img-fluid rounded-3"
+            style="background-image: url(https://images.pexels.com/photos/29694589/pexels-photo-29694589/free-photo-of-majestic-gothic-cathedral-with-twin-spires.jpeg?auto=compress&cs=tinysrgb&w=600)"
+          ></div>
+          <div class="card ezy__featured25-card">
+            <div
+              class="card-body p-0"
+              style="background-image: url(https://images.pexels.com/photos/29711989/pexels-photo-29711989/free-photo-of-scenic-winter-landscape-of-snowy-mountain-by-sea.jpeg?auto=compress&cs=tinysrgb&w=600)"
+            >
+
+              <div class="ezy__featured25-card-content px-3 mb-5 py-4 px-lg-4 py-lg-5 text-center"   style="background-image: url( https://images.pexels.com/photos/2193300/pexels-photo-2193300.jpeg?auto=compress&cs=tinysrgb&w=600 )"
+               >  </p>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="">
+          <div class="d-flex ezy__featured25-item position-relative p-3 p-md-4 mb-3 mb-lg-4">
+            <div class="ezy__featured25-icon mb-4 me-4">
+              <i class="fa-solid fa-plane fa-xl" style="color: #061237;"></i>
+            </div>
+            <div>
+              <h4 class="ezy__featured25-title fs-4 mb-3 text-capitalize fs-3 fw-bolder">Secure your information.</h4>
+              <p class="ezy__featured25-content mb-0">
+                Multiply, very fly dominion wherein, night cattle so. Bring. There every. Morning he you'll sixth
+                likeness shall seasons was shall.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex ezy__featured25-item position-relative p-3 p-md-4 mb-3 mb-lg-4">
+            <div class="ezy__featured25-icon mb-4 me-4">
+              <i class="fa-solid fa-money-bill fa-xl" style="color: #061237;"></i>
+            </div>
+            <div>
+              <h4 class="ezy__featured25-title fs-4 mb-3 text-capitalize fs-3 fw-bolder">Pick the type of banking.</h4>
+              <p class="ezy__featured25-content mb-0">
+                Evening bring a us third i were one open unto. Under days seed spirit a seas own own shall also.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex ezy__featured25-item position-relative p-3 p-md-4">
+            <div class="ezy__featured25-icon mb-4 me-4">
+              <i class="fa-solid fa-calendar-days fa-xl" style="color: #061237;"></i>
+            </div>
+            <div>
+              <h4 class="ezy__featured25-title fs-4 mb-3 text-capitalize fs-3 fw-bolder">Get your documentation</h4>
+              <p class="ezy__featured25-content mb-0 ">
+                Creeping. Were seas she'd midst won't abundantly whales face face sixth appear moveth. You're green
+                place.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<style>
+.ezy__featured25 {
+  /* Bootstrap variables */
+  --bs-body-color: #23262f;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-item-bg: #ffffff;
+  --ezy-card-bg: #061237;
+  --ezy-card-shadow: 0 24px 38px rgba(89, 88, 109, 0.27);
+
+  background-color: var(--bs-body-bg);
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .ezy__featured25 {
+    padding: 100px 0;
+  }
+}
+
+/* Gray Block Style */
+.gray .ezy__featured25,
+.ezy__featured25.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__featured25,
+.ezy__featured25.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-item-bg: #162231;
+  --ezy-card-bg: rgb(11, 23, 39);
+  --ezy-card-shadow: 0 24px 38px rgba(0, 0, 0, 0.27);
+}
+
+/* Dark Block Style */
+.dark .ezy__featured25,
+.ezy__featured25.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-item-bg: #162231;
+  --ezy-card-bg: rgb(30, 39, 53);
+  --ezy-card-shadow: 0 24px 38px rgba(0, 0, 0, 0.27);
+}
+
+.ezy__featured25-heading {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__featured25-heading {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.ezy__featured25-sub-heading {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+.ezy__featured25-icon {
+  color: var(--ezy-theme-color);
+  border-radius: 50%;
+  font-size: 32px;
+}
+
+.ezy__featured25-bg-holder {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  width: 100%;
+}
+
+@media (min-width: 991px) {
+  .ezy__featured25-bg-holder {
+    float: right;
+    height: 100%;
+  }
+}
+
+.ezy__featured25-title {
+  color: var(--bs-body-color);
+}
+
+.ezy__featured25-content {
+  color: var(--bs-body-color);
+  opacity: 0.7;
+}
+
+.ezy__featured25-card {
+  position: relative;
+  margin: -50px 50px 0 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  box-shadow: var(--ezy-card-shadow);
+  z-index: 11;
+}
+
+@media (min-width: 991px) {
+  .ezy__featured25-card {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 75%;
+    right: 0;
+    margin: 0;
+  }
+}
+
+.ezy__featured25-card .card-body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+}
+
+.ezy__featured25-card-content
+{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 175px;
+}
+
+.ezy__featured25-card-content {
+  background-color: var(--ezy-card-bg);
+  color: #fff;
+  border-radius: 10px;
+  line-height: 1.6;
+
+}
+
+.ezy__featured25-card-content p {
+  opacity: 0.8;
+}
+</style>
+
+  
+  
+  
+
+
+<section>
+
+
+
+
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    #myImg:hover {opacity: 0.7;}
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+    
+    /* Modal Content (image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+    
+    /* Caption of Modal Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+    
+    /* Add Animation */
+    .modal-content, #caption {  
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+    
+    @-webkit-keyframes zoom {
+      from {-webkit-transform:scale(0)} 
+      to {-webkit-transform:scale(1)}
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0)} 
+      to {transform:scale(1)}
+    }
+    
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+      .modal-content {
+        width: 100%;
+      }
+    }
+    </style>
+
+
+
+
+
+
+
+
+
+<div id="city" class="container"  >
+
+<section class="mt-5" data-aos="fade-down-right">
+
+ <h3 class="text-center text-capitalize fs-1 fw-bolder mt-5 mb-5">populer Decoration</h3>
+  <div class="container">
+    <div class="row mt-4 justify-content-between">
+      <div class="col-md-4 mt-5"> <img id="myImg"   class="img-fluid" src="https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Snow" style="width:100%; height: 250px;">
+        <div class="text-center"> <h3 class="fw-bolder mt-3 ">Australia </h3></div>
+        <div class="text-center">
+        
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+
+          
+        
+        </div>
+  
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+<span class="close">&times;</span>
+<img class="modal-content" id="img01">
+<div id="caption"></div>
+</div>
+
+
+      </div>
+      <div class="col-md-4 mt-5 "> <img id="myImg" class="img-fluid" src="https://images.pexels.com/photos/1010640/pexels-photo-1010640.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Snow" style="width:100%; height: 250px;">
+        <div class="text-center"> <h3 class="fw-bolder mt-3">New Zealand </h3></div>
+        <div class="text-center"> <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          
+          
+        
+        </div>
+
+      </div>
+      <div class="col-md-4 mt-5"> <img id="myImg"  class="img-fluid" src="https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Snow" style="width:100%; height: 250px;">
+        <div class="text-center"> <h3 class="fw-bolder mt-3"> Thailand</h3></div>
+        <div class="text-center"> <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          
+          
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<div class="container mt-4"data-aos="fade-down-right" >
+
+  <div class="row  justify-content-between">
+    <div class="col-md-6 col-sm-6"><img id="myImg" class="img-fluid" src="https://images.pexels.com/photos/163864/santorini-oia-greece-travel-163864.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Snow" style="width:100%; height:250px;">
+      <div class="text-center"> <h3 class="fw-bolder mt-3 ">Switzeland</h3> 
+        <div class="text-center"> <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          
+
+        
+        </div>
+      </div>
+      
+ </div>
+     
+
+      
+    
+
+
+    <div class="col-md-6 col-sm-6"> <img id="myImg" class="img-fluid" src="https://images.pexels.com/photos/161815/santorini-oia-greece-water-161815.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Snow" style="width:100%; height: 250px;">
+      <div class="text-center"> <h3 class="fw-bolder  mt-3">Canada</h3> </div>
+      <div class="text-center"> <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        
+        
+      
+      </div>
+    </div>
+    </div></div>
+  
+  
+ 
+      
+      
+      
+      
+</div>
+
+</div>
+
+
+<div id="servies" data-aos="zoom-in" >
+   <h2 class="text-capitalize text-center fw-bolder fs-1 mt-5 mb-5">  find populer touer</h2>
+  <section>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+     h1 { padding: 0 0 30px;}
+     a:hover{ text-decoration: none; }
+     .product-grid{
+         font-family: 'Nunito', sans-serif;
+         text-align: center;
+         overflow: hidden;
+     }
+     .product-grid .product-image{
+         overflow: hidden;
+         position: relative;
+     }
+     .product-grid .product-image a.image{ display: block; }
+     .product-grid .pic-1{
+         opacity: 1;
+         backface-visibility: hidden;
+         transition: all 0.5s ease 0s;
+     }
+     .product-grid:hover .pic-1{ opacity: 0; }
+     .product-grid .pic-2{
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         opacity: 0;
+         backface-visibility: hidden;
+         transition: all 0.5s ease-out 0s;
+     }
+     .product-grid:hover .pic-2{ 
+         opacity: 1;
+         transform: scale(1.09);
+     }
+     .product-grid .product-image img{
+         width: 100%;
+         height: auto;
+     }
+     .product-grid .product-discount-label,
+     .product-grid .product-new-label{
+         color: #061237;
+         background: #fff;
+         font-size: 13px;
+         font-weight: 600;
+         letter-spacing: 1.2px;
+         text-transform: uppercase;
+         padding: 5px 10px;
+         position: absolute;
+         top: 10px;
+         left: 0;
+         z-index: 1;
+         transition: all 0.3s ease 0s;
+     }
+     .product-grid .product-links{
+         padding: 0;
+         margin: 0;
+         list-style: none;
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         z-index: 1;
+     }
+     .product-grid .product-links li{
+         opacity: 0;
+         transform: translateX(100%); 
+         margin: 0;
+         transition: all 0.3s ease-in-out;
+     }
+     .product-grid:hover .product-links li{ 
+         opacity: 1;
+         transform: translateX(0%); 
+     }
+     .product-grid .product-links li a{
+         color: #222;
+         background-color: #fff;
+         font-size: 16px;
+         line-height: 45px;
+         height: 45px;
+         width: 50px;
+         display: block;
+         position: relative;
+         transition: all 0.3s ease 0s;
+     }
+     .product-grid .product-links li a:hover{
+         color: #061237;
+     }
+     .product-grid .product-links li a:before,
+     .product-grid .product-links li a:after{
+         content: attr(data-tip);
+         color: #fff;
+         background: #000;
+         font-size: 12px;
+         line-height: 20px;
+         padding: 2px 10px;
+         white-space: nowrap;
+         display: none;
+         transform: translateY(-50%);
+         position: absolute;
+         right: 60px;
+         top: 50%;
+     }
+     .product-grid .product-links li a:after{
+         content: '';
+         height: 15px;
+         width: 15px;
+         padding: 0;
+         border-radius: 0;
+         transform: translateY(-50%) rotate(45deg);
+         right: 58px;
+         z-index: -1;
+     }
+     .product-grid .product-links li a:hover:before,
+     .product-grid .product-links li a:hover:after{
+         display: block;
+     }
+     .product-grid .product-content{
+         padding: 12px;
+         position: relative;
+     }
+     .product-grid .title{
+         font-size: 17px;
+         font-weight: 600;
+         text-transform: capitalize;
+         letter-spacing: 0.5px;
+         margin: 0 0 6px;
+     }
+     .product-grid .title a{
+         color: #061237;
+         transition: all 0.3s ease 0s;
+     }
+     .product-grid .title a:hover{ color: #2f2e2ea6; }
+     .product-grid .rating{
+         color: #fcae01;
+         font-size: 12px;
+         padding: 0;
+         margin: 0 0 8px;
+         list-style: none;
+         transition: all 0.3s ease 0s;
+     }
+     .product-grid .rating li{ 
+         display: inline-block;
+         margin: 0 -1px;
+     }
+     .product-grid .rating li.far{ color: #999; }
+     .product-grid .price{
+         color: #061237
+         ;
+         font-size: 17px;
+         font-weight: 700;
+         margin: 0 0 10px;
+     }
+     .product-grid .price span{
+         color: #bbb;
+         font-weight: 400;
+         text-decoration: line-through;
+     }
+     .product-grid .add-cart{
+         color: #fff;
+         background: #061237;
+         font-size: 15px;
+         font-weight: 600;
+         padding: 8px 12px;
+         display: inline-block;
+         overflow: hidden;
+         transition: all 0.4s;
+     }
+     .product-grid .add-cart span{
+         display: inline-block;
+         transform: translateY(0);
+         transition: all 0.3s ease-in-out;
+     }
+     .product-grid .add-cart:hover span{
+         transform: translateY(-35px);
+     }
+     .product-grid .add-cart:before{
+         content: "\f290";
+         color: #fff;
+         font-family: "Font Awesome 5 Free";
+         font-size: 16px;
+         font-weight: 900;
+         transform: translateX(-50%);
+         position: absolute;
+         bottom: -20px;
+         left: 50%;
+         transition: all 0.3s ease-in-out;
+     }
+     .product-grid .add-cart:hover:before{ 
+         bottom: 25px;
+     }
+     .product-grid .product-links li a i{ line-height:inherit; }
+     @media screen and (max-width: 990px){
+         .product-grid{ margin-bottom: 30px; }
+     }</style>
+   <div class="container mt-5 mb-5">
+   <div class="row text-center">
+      
+   </div>
+ 
+   <div class="row">
+       <div class="col-md-6 col-sm-6 col-xl-3">
+           <div class="product-grid">
+               <div class="product-image">
+                   <a href="#" class="image">
+                       <img class="pic-1" src="https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&w=600">
+                       <img class="pic-2" src="https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&w=600">
+                   </a>
+                   <span class="product-discount-label fw-bolder">-15%</span>
+                   <ul class="product-links">
+                       <li><a href="#" data-tip="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                       <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                   </ul>
+               </div>
+               <div class="product-content">
+                   <h3 class="title"><a href="#">Australia</a></h3>
+                   <ul class="rating">
+                       <li class="fa fa-star"></li>
+                       <li class="fa fa-star"></li>
+                       <li class="fa fa-star"></li>
+                       <li class="fa fa-star"></li>
+                       <li class="far fa-star"></li>
+                   </ul>
+                   <div class="price"><span>$69.99</span> $48.99</div>
+                   <a class="add-cart" href="#"><span> Add to Cart </span></a>
+               </div>
+           </div>
+       </div>
+       <div class="col-md-6 col-sm-6 col-xl-3">
+           <div class="product-grid">
+               <div class="product-image">
+                   <a href="#" class="image">
+                       <img class="pic-1" src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=600">
+                       <img class="pic-2" src="https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg?auto=compress&cs=tinysrgb&w=600">
+                   </a>
+                   <span class="product-new-label fw-bolder">new</span>
+                   <ul class="product-links">
+                       <li><a href="#" data-tip="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                       <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                   </ul>
+               </div>
+               <div class="product-content">
+                   <h3 class="title"><a href="#">New Zealand</a></h3>
+                   <ul class="rating">
+                       <li class="fa fa-star"></li>
+                       <li class="fa fa-star"></li>
+                       <li class="fa fa-star"></li>
+                       <li class="far fa-star"></li>
+                       <li class="far fa-star"></li>
+                   </ul>
+                 
+                   <div class="price">$39.99</div>
+                   <a class="add-cart" href="#"><span> Add to Cart</span></a>
+               </div>
+           </div>
+       </div>
+       <div class="col-md-6 col-sm-6 col-xl-3">
+           <div class="product-grid">
+               <div class="product-image">
+                   <a href="#" class="image">
+                       <img class="pic-1" src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=600">
+                       <img class="pic-2" src="https://images.pexels.com/photos/536812/pexels-photo-536812.jpeg?auto=compress&cs=tinysrgb&w=600">
+                   </a>
+                   <span class="product-discount-label fw-bolder">-38%</span>
+                   <ul class="product-links">
+                       <li><a href="#" data-tip="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                       <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                   </ul>
+               </div>
+               <div class="product-content">
+                   <h3 class="title"><a href="#">Thailand</a></h3>
+                   <ul class="rating">
+                       <li class="fa fa-star"></li>
+                       <li class="fa fa-star"></li>
+                       <li class="fa fa-star"></li>
+                       <li class="fa fa-star"></li>
+                       <li class="far fa-star"></li>
+                   </ul>
+                   <div class="price"><span>$69.99</span> $48.99</div>
+                   <a class="add-cart" href="#"><span>Add to Cart</span></a>
+               </div>
+           </div>
+       </div>
+       <div class="col-md-6 col-sm-6 col-xl-3">
+           <div class="product-grid">
+               <div class="product-image">
+                   <a href="#" class="image">
+                       <img class="pic-1" src="https://images.pexels.com/photos/29719913/pexels-photo-29719913/free-photo-of-modern-train-on-jakarta-city-tracks.jpeg?auto=compress&cs=tinysrgb&w=600">
+                       <img class="pic-2" src="https://images.pexels.com/photos/11940863/pexels-photo-11940863.jpeg?auto=compress&cs=tinysrgb&w=600">
+                   </a>
+                   <ul class="product-links">
+                       <li><a href="#" data-tip="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                       <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                   </ul>
+               </div>
+               <div class="product-content">
+                   <h3 class="title"><a href="#">Switzeland</a></h3>
+                   <ul class="rating">
+                       <li class="fa fa-star"></li>
+                       <li class="fa fa-star"></li>
+                       <li class="fa fa-star"></li>
+                       <li class="fa fa-star"></li>
+                       <li class="far fa-star"></li>
+                   </ul>
+                   <div class="price">$40.99</div>
+                   <a class="add-cart" href="#"><span>Add to Cart</span></a>
+               </div>
+           </div>
+       </div>
+   </div>
+ </div>
+
+
+ <div class="container mt-5">
+  <div class="row text-center">
+      
+  </div>
+
+  <div class="row">
+      <div class="col-md-6 col-sm-6 col-xl-3">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="#" class="image">
+                      <img class="pic-1" src="https://images.pexels.com/photos/1190317/pexels-photo-1190317.jpeg?auto=compress&cs=tinysrgb&w=600">
+                      <img class="pic-2" src="https://images.pexels.com/photos/9857746/pexels-photo-9857746.jpeg?auto=compress&cs=tinysrgb&w=600">
+                  </a>
+                  <span class="product-discount-label">-15%</span>
+                  <ul class="product-links">
+                      <li><a href="#" data-tip="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                      <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                  </ul>
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">Canada</a></h3>
+                  <ul class="rating">
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="far fa-star"></li>
+                  </ul>
+                  <div class="price"><span>$69.99</span> $48.99</div>
+                  <a class="add-cart" href="#"><span> Add to Cart </span></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xl-3">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="#" class="image">
+                      <img class="pic-1" src="https://images.pexels.com/photos/7084357/pexels-photo-7084357.jpeg?auto=compress&cs=tinysrgb&w=600">
+                      <img class="pic-2" src="https://images.pexels.com/photos/29403161/pexels-photo-29403161/free-photo-of-red-fishing-boat-sailing-in-turkiye-s-azure-seas.jpeg?auto=compress&cs=tinysrgb&w=600">
+                  </a>
+                  <span class="product-new-label">new</span>
+                  <ul class="product-links">
+                      <li><a href="#" data-tip="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                      <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                  </ul>
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">Canada</a></h3>
+                  <ul class="rating">
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="far fa-star"></li>
+                      <li class="far fa-star"></li>
+                  </ul>
+                
+                  <div class="price">$39.99</div>
+                  <a class="add-cart" href="#"><span> Add to Cart</span></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xl-3">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="#" class="image">
+                      <img class="pic-1" src="https://images.pexels.com/photos/29743108/pexels-photo-29743108/free-photo-of-scenic-view-of-alfama-district-in-lisbon-portugal.jpeg?auto=compress&cs=tinysrgb&w=600">
+                      <img class="pic-2" src="https://images.pexels.com/photos/7973415/pexels-photo-7973415.jpeg?auto=compress&cs=tinysrgb&w=600">
+                  </a>
+                  <span class="product-discount-label">-38%</span>
+                  <ul class="product-links">
+                      <li><a href="#" data-tip="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                      <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                  </ul>
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">New Zealand</a></h3>
+                  <ul class="rating">
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="far fa-star"></li>
+                  </ul>
+                  <div class="price"><span>$69.99</span> $48.99</div>
+                  <a class="add-cart" href="#"><span>Add to Cart</span></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xl-3">
+          <div class="product-grid">
+              <div class="product-image">
+                  <a href="#" class="image">
+                      <img class="pic-1" src="https://images.pexels.com/photos/29734965/pexels-photo-29734965/free-photo-of-matterhorn-scenery-in-zermatt-switzerland.jpeg?auto=compress&cs=tinysrgb&w=600">
+                      <img class="pic-2" src="https://images.pexels.com/photos/28566983/pexels-photo-28566983/free-photo-of-old-dubai-traditional-architecture-at-twilight.jpeg?auto=compress&cs=tinysrgb&w=600">
+                  </a>
+                  <ul class="product-links">
+                      <li><a href="#" data-tip="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                      <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                  </ul>
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">Australia</a></h3>
+                  <ul class="rating">
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="far fa-star"></li>
+                  </ul>
+                  <div class="price">$40.99</div>
+                  <a class="add-cart" href="#"><span>Add to Cart</span></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+</section>
+
+</div>
+ 
+
+    
+
+  <!-- and the testimonla -->
+  
+  
+  
+  <div id="testimoial" class="container" style="padding:25px 5px;" data-aos="fade-left">
+  
+  
+  <style>body{ background: #f4f7fa; }
+    h1{ padding: 0 0 30px; }
+    .testimonial{
+        background: #fff;
+        padding: 20px;
+        margin: 0 15px 10px 15px;
+        position: relative;
+    }
+    .testimonial:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background:#061237 ;
+        position: absolute;
+        top: 4%;
+        left: 2%;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    .testimonial .title{
+        font-size: 20px;
+        font-weight: 500;
+        color: #333;
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+    .testimonial .description{
+        font-size: 14px;
+        color: #555;
+        line-height: 30px;
+    }
+    .testimonial .testimonial-content{
+        position: relative;
+    }
+    .testimonial .testimonial-content:after{
+        content: "\f10e";
+        font-family: "Font Awesome 5 Free"; font-weight: 900;
+        position: absolute;
+        top: -5px;
+        right: 0;
+        font-size: 45px;
+        color: #a8a8a8;
+    }
+    .testimonial .pic{
+        display: inline-block;
+        
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-right: 15px;
+        overflow: hidden;
+    }
+    .testimonial .pic img{
+        width: 100%;
+        height: auto;
+    }
+    .testimonial .content{
+        display: inline-block;
+        margin: 10px 0;
+    }
+    .testimonial .name{
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0;
+        text-transform: capitalize;
+    }
+    .testimonial .post{
+        font-size: 14px;
+        color: #555;
+        line-height: 24px;
+    }
+    .testimonial .rating{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .testimonial .rating li{
+        display: inline-block;
+        color: #ffc207;
+    }
+    .owl-theme .owl-controls{
+        margin-top: 20px;
+    }
+    .owl-theme .owl-controls .owl-page span{
+        background: #061237;
+    }
+    @media only screen and (max-width: 479px){
+        .testimonial .testimonial-content:after{
+            content: "";
+        }
+    }</style>
+
+<div class="container mt-5 mb-5" data-aos="zoom-in-down">
+  <h2 class=" text-capitalize text-center mt-5 mb-5 fw-bolder py-3" >what  Travels say</h2>
+    <div class="row text-center">
+        
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div id="testimonial-slider" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                <div class="owl-item" style="width: 570px;">
+                    <div class="testimonial">
+                    
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget vehicula nibh. Duis eu interdum dolor. Pellentesque mollis nisl vitae.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic">
+                                <img src="https://cdn.yahoobaba.net/testimonial/demo49/images/img-1.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h4 class="name text-capitalize fw-bolder fs-3">Williamson</h4>
+                                <span class="post">Web Developer</span>
+                                <ul class="rating">
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item" style="width: 570px;">
+                    <div class="testimonial">
+                      
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget vehicula nibh. Duis eu interdum dolor. Pellentesque mollis nisl vitae.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic">
+                                <img src="https://cdn.yahoobaba.net/testimonial/demo49/images/img-2.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h4 class="name text-capitalize fs-3  fw-bolder">kristiana</h4>
+                                <span class="post">Web Designer</span>
+                                <ul class="rating">
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item" style="width: 570px;">
+                    <div class="testimonial">
+                      
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget vehicula nibh. Duis eu interdum dolor. Pellentesque mollis nisl vitae.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic">
+                                <img src="https://cdn.yahoobaba.net/testimonial/demo49/images/img-3.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h4 class="name text-capitalize fs-3  fw-bolder ">Steve Thomas</h4>
+                                <span class="post">Web Developer</span>
+                                <ul class="rating">
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item" style="width: 570px;">
+                    <div class="testimonial">
+                        
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget vehicula nibh. Duis eu interdum dolor. Pellentesque mollis nisl vitae.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic">
+                                <img src="https://cdn.yahoobaba.net/testimonial/demo49/images/img-4.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h4 class="name text-capitalize fs-3  fw-bolder">Miranda joy</h4>
+                                <span class="post">Web Designer</span>
+                                <ul class="rating">
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                    <li class="fa fa-star"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-controls clickable">
+                <div class="owl-pagination">
+                    <div class="owl-page"><span class=""></span></div>
+                    <div class="owl-page active"><span class=""></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script> window.onload = function(){
+$("#testimonial-slider").owlCarousel({
+    items:2,
+    itemsDesktop:[1000,2],
+    itemsDesktopSmall:[979,1],
+    itemsTablet:[768,1],
+    pagination:true,
+    navigation:false,
+    navigationText:["",""],
+    slideSpeed:1000,
+    autoPlay:true
+});
+}</script>
+
+
+
+  
+  </div>
+
+
+  
+  <section class="ezy__travel7 light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="ezy__travel7-header p-4 rounded-3 text-center">
+            <h2 class="ezy__travel7-heading mb-0 text-capitalize fs-3  fw-bolder">Who Is Traveling?</h2>
+          </div>
+        </div>
+      </div>
+  
+      <form>
+        <div class="card ezy__travel7-card mt-5 p-3 p-md-4 p-lg-5 border-0 rounded-3">
+          <div class="d-flex align-items-center mb-5">
+            <div class="ezy__travel7-number d-flex align-items-center justify-content-center me-3">
+              <p class="mb-0 fw-bold">1</p>
+            </div>
+            <h3 class="mb-0 fw-bold text-capitalize fs-3  fw-bolder">ADULT</h3>
+          </div>
+  
+          <div>
+            <div class="row">
+              <div class="d-flex align-items-center mb-4">
+                <div class="ezy__travel7-title-line"></div>
+                <h4 class="mb-0 ms-3 text-capitalize fs-3  fw-bolder">Personal Information</h4>
+              </div>
+              <!-- first name -->
+              <div class="col-md-6 col-lg-4">
+                <div class="form-group mb-4">
+                  <label class="mb-2" for="fName text-capitalize fs-3  fw-bolder">First Name</label>
+                  <input type="text" class="form-control ps-4" id="fName" placeholder="First Name" />
+                </div>
+              </div>
+              <!-- last name -->
+              <div class="col-md-6 col-lg-4">
+                <div class="form-group mb-4">
+                  <label class="mb-2" for="lName text-capitalize fs-3  fw-bolder">Last Name</label>
+                  <input type="text" class="form-control ps-4" id="lName" placeholder="Last Name" />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-2">
+                <div class="form-group mb-4">
+                  <label class="mb-2" for="bDate text-capitalize fs-3  fw-bolder">Birth Date</label>
+                  <input type="text" class="form-control ps-4" id="bDate" placeholder="DD/MM/YYYY" />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-2">
+                <label class="mb-2" for="gender text-capitalize fs-3  fw-bolder">Gender</label>
+                <select class="form-select ps-4" aria-label="Default select example">
+                  <option selected>Male</option>
+                  <option value="1">Female</option>
+                  <option value="2">Other</option>
+                </select>
+              </div>
+            </div>
+  
+            <div class="row">
+              <!-- country -->
+              <div class="col-md-6 col-lg-4">
+                <label class="mb-2" for="nationality text-capitalize fs-3  fw-bolder">Nationality</label>
+                <select class="form-select ps-4" aria-label="Default select example">
+                  <option selected>Bangladesh</option>
+                  <option value="1">USA</option>
+                  <option value="2">France</option>
+                </select>
+              </div>
+              <!-- passport no -->
+              <div class="col-md-6 col-lg-4">
+                <div class="form-group mb-4">
+                  <label class="mb-2" for="passport text-capitalize fs-3  fw-bolder">Passport Or ID Number</label>
+                  <input type="password" class="form-control ps-4" id="passport" placeholder="***********" />
+                </div>
+              </div>
+              <!-- city -->
+              <div class="col-md-6 col-lg-4">
+                <div class="form-group mb-4">
+                  <label class="mb-2" for="number text-capitalize fs-3  fw-bolder">Expiry Date</label>
+                  <div class="d-flex align-items-center">
+                    <input
+                      type="number"
+                      class="form-control ps-4 ezy__travel7-expiry-date"
+                      id="month"
+                      placeholder="MM"
+                    />
+                    <input
+                      type="number"
+                      class="form-control ms-3 ps-4 ezy__travel7-expiry-date"
+                      id="city"
+                      placeholder="YYYY"
+                    />
+                    <div class="form-check ezy__travel7-expiry-date ms-3">
+                      <input class="form-check-input" type="checkbox" value="" id="expiry" />
+                      <label class="form-check-label" for="expiry"> No Expiry</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row mt-5">
+            <div class="col-12">
+              <div class="d-flex align-items-center mb-4">
+                <div class="ezy__travel7-title-line"></div>
+                <h4 class="mb-0 ms-3">Baggage</h4>
+              </div>
+              <div class="ezy__travel7-table p-3 p-lg-4">
+                <div class="row align-items-center">
+                  <div class="col-6 col-sm-4">
+                    <div>
+                      <h6 class="mb-0">Cabin Baggage</h6>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-5">
+                    <p class="mb-0 opacity-50">42x31x20cm</p>
+                  </div>
+                  <div class="col-6 col-sm-2">
+                    <div>
+                      <h6 class="mb-0 fs-4">Free</h6>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-2 col-md-1">
+                    <div class="ezy__travel7-times-icon">
+                      <i class="fas fa-times"></i>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="row align-items-center mt-4">
+                  <div class="col-6 col-sm-4">
+                    <div>
+                      <h6 class="mb-0 text-capitalize fs-3  fw-bolder">Checked Baggage</h6>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-5">
+                    <p class="mb-0 opacity-50">23kg</p>
+                  </div>
+                  <div class="col-6 col-sm-2">
+                    <div>
+                      <h6 class="mb-0 fs-4">$80</h6>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-2 col-md-1">
+                    <div class="ezy__travel7-times-icon">
+                      <i class="fas fa-times"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="row align-items-center mt-3">
+                <div class="col-7 col-sm-8">
+                  <div class="ezy__travel7-checkout p-3 rounded-3">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <h6 class="mb-0 text-capitalize fs-3  fw-bolder">Checked Baggage</h6>
+                      </div>
+                      <div class="col-6">
+                        <p class="mb-0 opacity-50">23kg</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 col-sm-1">
+                  <div class="form-group py-4">
+                    <input class="ezy__travel7-checkout-input form-control rounded-3" type="number" placeholder="2" />
+                  </div>
+                </div>
+                <div class="col-3">
+                  <button class="btn ezy__travel7-price-btn">$80</button>
+                </div>
+              </div>
+              <div class="row justify-content-between align-items-center mt-3">
+                <div class="col-8">
+                  <div class="d-flex align-items-center">
+                    <h6 class="mb-0 text-capitalize fs-3  fw-bolder">Sport Equipment</h6>
+                    <div class="ezy__travel7-tooltip ms-4">
+                      <i class="fas fa-question"></i>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-3">
+                  <button class="btn ezy__travel7-price-btn">$80</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <div class="row mt-5">
+              <div class="d-flex align-items-center mb-4">
+                <div class="ezy__travel7-title-line"></div>
+                <h4 class="mb-0 ms-3 text-capitalize fs-3  fw-bolder">Travel Insurance</h4>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="card ezy__travel7-price-card bg-transparent border-0 p-4 p-md-0 p-xl-5">
+                  <div class="card-body p-4 p-md-2 p-xl-5">
+                    <div class="ezy__travel7-price-icon d-flex align-items-center justify-content-center w-100">
+                      <i class="fas fa-heart-broken fs-4 " style="color:  #172b4d;"></i>
+                    </div>
+                    <h4 class="text-center my-3 text-capitalize fs-3  fw-bolder">Travel Basic</h4>
+                    <ul class="nav ezy__pricing10-nav flex-column">
+                      <li class="d-flex align-items-center">
+                        <i class="fas fa-times ezy__travel7-negative-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Medical Expense</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Trip Cancellatuon</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Lost Baggage</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Air Travel Insurance</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Libability</p>
+                      </li>
+                    </ul>
+                    <div class="text-center mt-4">
+                      <button class="btn ezy__travel7-price-btn text-center">$0</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12 col-md-4">
+                <div class="card ezy__travel7-price-card bg-transparent p-4 p-md-0 p-xl-5 active">
+                  <div class="card-body p-4 p-md-2 p-xl-5">
+                    <div class="ezy__travel7-price-icon d-flex align-items-center justify-content-center w-100">
+                      <i class="fas fa-star fs-4" style="color:  #172b4d;"></i>
+                    </div>
+                    <h4 class="text-center my-3 text-capitalize fs-3  fw-bolder">Travel Pro</h4>
+                    <ul class="nav ezy__pricing10-nav flex-column">
+                      <li class="d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3 "style="color"></i>
+                        <p class="mb-0 opacity-50">Medical Expense</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-times ezy__travel7-negative-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Trip Cancellatuon</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Lost Baggage</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Air Travel Insurance</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Libability</p>
+                      </li>
+                    </ul>
+                    <div class="text-center mt-4">
+                      <button class="btn ezy__travel7-price-btn text-center">$50</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12 col-md-4">
+                <div class="card ezy__travel7-price-card bg-transparent border-0 p-4 p-md-0 p-xl-5">
+                  <div class="card-body p-4 p-md-2 p-xl-5">
+                    <div class="ezy__travel7-price-icon d-flex align-items-center justify-content-center w-100">
+                      <i class="fas fa-briefcase fs-4" style="color:  #172b4d;"></i>
+                    </div>
+                    <h4 class="text-center my-3 text-capitalize fs-3  fw-bolder">Travel Premium</h4>
+                    <ul class="nav ezy__pricing10-nav flex-column">
+                      <li class="d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Medical Expense</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Trip Cancellatuon</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Lost Baggage</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-check ezy__travel7-positive-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Air Travel Insurance</p>
+                      </li>
+                      <li class="pt-2 d-flex align-items-center">
+                        <i class="fas fa-times ezy__travel7-negative-icon me-3"></i>
+                        <p class="mb-0 opacity-50">Libability</p>
+                      </li>
+                    </ul>
+                    <div class="text-center mt-4">
+                      <button class="btn ezy__travel7-price-btn text-center">$80</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12">
+            <div>
+              <button type="submit" class="btn ezy__travel7-btn-add me-3 text-capitalize fs-3  fw-bolder">Add Passenger</button>
+              <button type="submit" class="btn ezy__travel7-btn-submit text-capitalize fs-3  fw-bolder">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <style>
+  .ezy__travel7 {
+    /* Bootstrap variables */
+    --bs-body-color: #1c1c1c;
+    --bs-body-bg: rgb(255, 255, 255);
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+    --ezy-body-color-invert: rgb(64, 65, 86);
+    --ezy-card-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+    --ezy-border-color: rgb(187, 191, 200);
+  
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    padding: 60px 0;
+  }
+  @media (min-width: 768px) {
+    .ezy__travel7 {
+      padding: 100px 0;
+    }
+  }
+  
+  /* Gray Block Style */
+  .gray .ezy__travel7,
+  .ezy__travel7.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  
+    /* Easy Frontend variables */
+    --ezy-body-color-invert: rgb(46, 47, 65);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__travel7,
+  .ezy__travel7.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(64, 65, 86);
+  
+    /* Easy Frontend variables */
+    --ezy-body-color-invert: rgb(46, 47, 65);
+    --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+    --ezy-border-color: rgba(255, 255, 255, 0.43);
+  }
+  
+  /* Dark Block Style */
+  .dark .ezy__travel7,
+  .ezy__travel7.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(46, 47, 65);
+  
+    /* Easy Frontend variables */
+    --ezy-body-color-invert: rgb(64, 65, 86);
+    --ezy-card-shadow: 0px 6px 44px rgba(0, 0, 0, 0.2);
+    --ezy-border-color: rgba(255, 255, 255, 0.43);
+  }
+  
+  .ezy__travel7-heading {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1;
+    color: #fff;
+  }
+  @media (min-width: 768px) {
+    .ezy__travel7-heading {
+      font-size: 32px;
+    }
+  }
+  
+  .ezy__travel7-header {
+    background-color: #172b4d;
+  }
+  .ezy__travel7-card {
+    background-color: var(--bs-body-bg);
+    box-shadow: var(--ezy-card-shadow);
+  }
+  
+  .ezy__travel7 .form-control {
+    min-height: 42px;
+    line-height: 36px;
+    border-color: #172b4d;
+    background: transparent;
+    color: rgb(146, 144, 158);
+  }
+  .ezy__travel7 .form-select {
+    min-height: 42px;
+    line-height: 36px;
+    border-color: #172b4d;
+    background-color: transparent;
+    color: rgb(146, 144, 158);
+  }
+  .ezy__travel7 .form-select option {
+    background-color: var(--bs-body-bg) !important;
+  }
+  
+  .ezy__travel7 .form-control:focus {
+    border-color:#172b4d;
+    box-shadow: none;
+    color: #fff;
+  }
+  
+  .ezy__travel7 .form-check-input:checked {
+    background-color: #172b4d;
+    border-color: #172b4d;
+  }
+  
+  .ezy__travel7 .form-group label {
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  
+  .ezy__travel7-btn-submit {
+    padding: 12px 30px;
+    background-color: #172b4d;
+    border-color: #172b4d;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .ezy__travel7-btn-submit:hover {
+    background-color: #172b4d;
+    border-color: #172b4d;
+    color: #fff;
+  }
+  
+  .ezy__travel7-btn-add {
+    padding: 12px 30px;
+    background-color: transparent;
+    border-color:#172b4d;
+    color: var(--bs-body-color);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .ezy__travel7-btn-add:hover {
+    background-color: #172b4d;
+    border-color: #172b4d;
+    color: #fff;
+  }
+  
+  .ezy__travel7-line {
+    background-color: var(--bs-body-color);
+    opacity: 0.08;
+    margin: 30px 0 40px;
+  }
+  
+  .ezy__travel7 label {
+    font-weight: 500;
+  }
+  .ezy__travel7-payment-option {
+    background-color: var(--ezy-body-color-invert);
+    min-height: 120px;
+    border: 0;
+    opacity: 0.8;
+    filter: grayscale(0.1);
+    transition: 0.4s;
+  }
+  .ezy__travel7-payment-option:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+  
+  .ezy__travel7-label {
+    font-weight: 500;
+  }
+  
+  .ezy__travel7-number {
+    background-color: var(--ezy-body-color-invert);
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 05px;
+  }
+  
+  .ezy__travel7-title-line {
+    width: 4px;
+    height: 27px;
+    border-radius: 4px;
+    background-color: #172b4d;
+  }
+  
+  .ezy__travel7-expiry-date {
+    width: 33%;
+  }
+  
+  .ezy__travel7 .form-check-input {
+    border-color: #172b4d;
+  }
+  
+  .ezy__travel7-info {
+    min-height: 60px;
+    line-height: 40px;
+    border-color: #172b4d;
+    background: rgba(163, 190, 241, 0.14);
+    color:#172b4d;
+  }
+  
+  .ezy__travel7-amount {
+    min-height: 60px !important;
+    line-height: 40px;
+  }
+  .ezy__travel7-btn-price {
+    min-height: 60px !important;
+    padding: 12px 30px;
+    background-color:#172b4d;
+    border-color: #172b4d;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .ezy__travel7-btn-price:hover {
+    background-color:#172b4d;
+    border-color:#172b4d;
+    color: #fff;
+  }
+  
+  .ezy__travel7-times-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(160, 160, 160, 0.35);
+    color: var(--bs-body-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0.3;
+  }
+  .ezy__travel7-times-icon:hover {
+    opacity: 0.75;
+  }
+  .ezy__travel7-checkout {
+    height: 48px;
+    background-color: rgba(163, 190, 241, 0.14);
+    color: var(--bs-body-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ezy__travel7-checkout-input {
+    min-height: 48px;
+    background-color: rgba(163, 190, 241, 0.14) !important;
+    color: var(--bs-body-color) !important;
+    border: 0 !important;
+  }
+  .ezy__travel7-checkout-input::placeholder {
+    color: var(--bs-body-color);
+  }
+  .ezy__travel7-price-btn {
+    color: #fff;
+    background-color: #172b4d;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 90px;
+    height: 48px;
+  }
+  .ezy__travel7-price-btn:hover {
+    color: #fff;
+    background-color: #172b4d;
+  }
+  
+  .ezy__travel7-tooltip {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bfc0d3;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .ezy__travel7-price-card {
+    border: 1px solid transparent !important;
+  }
+  .ezy__travel7-price-card.active {
+    border: 1px solid #172b4d !important;
+  }
+  .ezy__travel7-price-card:hover {
+    border: 1px solid #172b4d !important;
+  }
+  .ezy__travel7-positive-icon {
+    color: #172b4d;
+  }
+  .ezy__travel7-negative-icon {
+    opacity: 0.5;
+  }
+  
+  .ezy__travel7-table {
+    border: 1px solid #172b4d ;
+  }
+  </style>
+
+  <div id="blog">
+
+    <style>.ezy__blog4 {
+        /* Bootstrap variables */
+        --bs-body-color: #28303b;
+        --bs-body-bg: #fff;
+      
+        /* easy frontend variables */
+        --ezy-theme-color: rgb(13, 110, 253);
+        --ezy-theme-color-rgb: 13, 110, 253;
+        --ezy-card-bg: #fff;
+        --ezy-card-shadow: 0 25px 41px rgba(89, 88, 109, 0.15);
+      
+        background-color: var(--bs-body-bg);
+        padding: 60px 0;
+      }
+      
+      @media (min-width: 768px) {
+        .ezy__blog4 {
+          padding: 100px 0;
+        }
+      
+        /* Gray Block Style */
+        .gray .ezy__blog4,
+        .ezy__blog4.gray {
+          /* Bootstrap variables */
+          --bs-body-bg: rgb(246, 246, 246);
+      
+          /* easy frontend variables */
+          --ezy-card-bg: #fff;
+          --ezy-card-shadow: 0px 8px 44px rgba(182, 198, 222, 0.48);
+        }
+      }
+      
+      /* Dark Gray Block Style */
+      .dark-gray .ezy__blog4,
+      .ezy__blog4.dark-gray {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(241, 241, 241);
+        --bs-body-bg: rgb(30, 39, 53);
+      
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(11, 23, 39);
+        --ezy-card-shadow: none;
+      }
+      
+      /* Dark Block Style */
+      .dark .ezy__blog4,
+      .ezy__blog4.dark {
+        /* Bootstrap variables */
+        --bs-body-color: rgb(255, 255, 255);
+        --bs-body-bg: rgb(11, 23, 39);
+      
+        /* easy frontend variables */
+        --ezy-card-bg: rgb(30, 39, 53);
+        --ezy-card-shadow: none;
+      }
+      
+      /* heading and sub-heading */
+      .ezy__blog4-heading {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1;
+        color: var(--bs-body-color);
+      }
+      
+      .ezy__blog4-sub-heading {
+        color: var(--bs-body-color);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        opacity: 0.8;
+      }
+      
+      @media (min-width: 991px) {
+        .ezy__blog4-heading {
+          font-size: 45px;
+        }
+      }
+      
+      .ezy__blog4-post {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: var(--ezy-card-bg);
+        box-shadow: var(--ezy-card-shadow);
+      }
+      
+      @media (min-width: 768px) {
+        .ezy__blog4-featured-post .ezy__blog4-author {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      
+        .ezy__blog4-featured-post .ezy__blog4-title {
+          font-size: 40px;
+          line-height: 50px;
+        }
+      
+        .ezy__blog4-featured-post .ezy__blog4-description {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+      
+      .ezy__blog4-title {
+        font-weight: 500;
+        margin-top: 0 !important;
+        color: var(--bs-body-color);
+      }
+      
+      .ezy__blog4-description {
+        color: var(--bs-body-color);
+        opacity: 0.6;
+      }
+      
+      .ezy__blog4-btn {
+        padding: 12px 30px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color:#172b4d;
+        border-color: #172b4d;
+      }
+      
+      .ezy__blog4-btn:hover {
+        color: #ffffff;
+        background-color: #172b4d;
+      }
+      
+      .ezy__blog4-btn-read-more {
+        padding: 7px 20px;
+        color: var(--bs-body-color);
+        border-color:#172b4d;
+      }
+      
+      .ezy__blog4-btn-read-more:hover {
+        background-color:#172b4d;
+        color: #ffffff;
+      }
+      
+      .ezy__blog4-author {
+        color: var(--bs-body-color);
+      }
+      
+      .ezy__blog4-author a {
+        color: var(--ezy-theme-color);
+      }</style>
+
+
+<section class="ezy__blog4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="ezy__blog4-heading mb-3 mt-0">Heal the world with banking blog.</h2>
+          <p class="ezy__blog4-sub-heading px-lg-5 mb-4">
+            Banking crises have developed many times throughout history when one or more risks have emerged.
+          </p>
+          <a href="" class="btn  ezy__blog4-btn text-capitalize fs-3  fw-bolder">All Posts</a>
+        </div>
+      </div>
+  
+      <div class="row align-items-center mt-5">
+        <div class="col-12 mb-4">
+          <article class="ezy__blog4-featured-post">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <img src="https://images.pexels.com/photos/28987817/pexels-photo-28987817/free-photo-of-decorated-fountain-in-historic-maulbronn-monastery.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-5">
+                <div class="mt-4 mt-lg-0 ps-lg-4">
+                  <h4 class="ezy__blog4-title mb-2 fs-2 text-capitalize fw-bolder">
+                    Interview - What it's like to work remorely in big-sized product development?
+                  </h4>
+                  <p class="ezy__blog4-description mt-3 mb-4">
+                    This is a factor in the economy of a nation, and the administration takes the major choices.This
+                    is a factor in the economy of a nation, and the administration takes the major choices.Banking
+                    crises have developed many times throughout history when one or more risks have emerged for a
+                    banking sector as a whole.
+                  </p>
+                  <div class="ezy__blog4-author d-flex align-items-center">
+                    <div class="me-2">
+                      <img
+                        src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_3.jpeg"
+                        alt=""
+                        class="img-fluid rounded-circle border"
+                        width="47"
+                      />
+                    </div>
+                    <div>
+                      <p class="mb-0">By<b> Alan Bell</b></p>
+                      <p class="mb-0 small opacity-75">August 10th, 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="ezy__blog4-post rounded overflow-hidden mt-4 h-100">
+            <img src="https://images.pexels.com/photos/815880/pexels-photo-815880.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="img-fluid w-100" />
+            <div class="p-3 p-lg-4">
+              <h4 class="ezy__blog4-title fs-4 mb-1">Not Your Regular Home Decoration?</h4>
+              <p class="ezy__blog4-author">
+                <span class="me-2">By <a href="" class="text-decoration-none">Maisha Adiba</a></span>
+                <span><i class="far fa-clock me-1"></i> <span>21 Jun, 2022</span></span>
+              </p>
+              <p class="ezy__blog4-description mt-3 mb-4">
+                Urna molestie at eleme ntum eu facilisis sed odio Male suada fames.
+              </p>
+              <a href="" class="btn ezy__blog4-btn-read-more text-capitalize fs-3  fw-bolder">Read More</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="ezy__blog4-post rounded overflow-hidden mt-4 h-100">
+            <img src="https://images.pexels.com/photos/1542620/pexels-photo-1542620.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="img-fluid w-100" />
+            <div class="p-3 p-lg-4">
+              <h4 class="ezy__blog4-title fs-4 mb-1">How I’m Styling Everyday Black Outfits</h4>
+              <p class="ezy__blog4-author">
+                <span class="me-2">By <a href="" class="text-decoration-none">Alex Hales</a></span>
+                <span><i class="far fa-clock me-1"></i> <span>21 Jun, 2022</span></span>
+              </p>
+              <p class="ezy__blog4-description mt-3 mb-4">
+                It’s no secret that the digital industry is booming. From exciting startups to global brands.
+              </p>
+              <a href="" class="btn ezy__blog4-btn-read-more text-capitalize fs-3  fw-bolder">Read More</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="ezy__blog4-post rounded overflow-hidden mt-4 h-100">
+            <img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="img-fluid w-100" />
+            <div class="p-3 p-lg-4">
+              <h4 class="ezy__blog4-title fs-4 mb-1">Fashion Essentials All Men Should Know</h4>
+              <p class="ezy__blog4-author">
+                <span class="me-2">By <a href="" class="text-decoration-none">John Stokes</a></span>
+                <span><i class="far fa-clock me-1"></i> <span>11 Mar, 2022</span></span>
+              </p>
+              <p class="ezy__blog4-description mt-3 mb-4">
+                More off this less hello salamander lied porpoise much over tightly circa horse taped.
+              </p>
+              <a href="" class="btn ezy__blog4-btn-read-more text-capitalize fs-3  fw-bolder ">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  
+  
+  
+  
+  
+  
+  
+  
+      
+  </div>
+  
+  <section class="ezy__footer7 dark">
+    <div class="container">
+      <div class="row text-center text-sm-start">
+        <div class="col-sm-6 col-lg-3 mt-4 mt-lg-0">
+          <h5 class="text-capitalize fs-3  fw-bolder">Quick Links</h5>
+          <ul class="nav flex-column ezy__footer7-quick-links">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 mt-4 mt-lg-0">
+          <h5 class="text-capitalize fs-3  fw-bolder">Social Media</h5>
+          <ul class="nav flex-column ezy__footer7-quick-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 mt-4 mt-lg-0">
+          <h5 class="text-capitalize fs-3  fw-bolder">Job Info</h5>
+          <ul class="nav flex-column ezy__footer7-quick-links">
+            <li><a href="#">Select</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Payment</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 mt-4 mt-lg-0">
+          <h5 class="text-capitalize fs-3  fw-bolder">Language</h5>
+          <select name="language" class="form-select px-4">
+            <option value="en">English</option>
+            <option value="bn">Bangla</option>
+          </select>
+          <h5 class="mt-4">Currency</h5>
+          <select name="language" class="form-select px-4">
+            <option value="en">US Dollars $</option>
+            <option value="bn">UK Dollars $</option>
+          </select>
+        </div>
+  
+        <div class="col-lg-9">
+          <ul class="ezy__footer7-social nav mt-3">
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-wordpress"></i></a>
+            </li>
+          </ul>
+          <div class="mt-3 opacity-50 ezy__footer7-copyright">
+            <span>Copyright &copy; Easy Frontend, All rights reserved</span>
+            <a class="ms-2" href="#">Terms & Conditions</a>
+            <a class="ms-2" href="#">Privacy Policy</a>
+            <a class="ms-2" href="#">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  .ezy__footer7 {
+    /* Bootstrap variables */
+    --bs-body-color: #28303b;
+    --bs-body-bg: rgb(255, 255, 255);
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+  
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    padding: 60px 0;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__footer7 {
+      padding: 60px 0 100px 0;
+    }
+  }
+  
+  /* Gray Block Style */
+  .gray .ezy__footer7,
+  .ezy__footer7.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__footer7,
+  .ezy__footer7.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+  }
+  
+  .dark .ezy__footer7,
+  .ezy__footer7.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  
+    /* Easy Frontend variables */
+  }
+  
+  .ezy__footer7-nav .nav-link {
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__footer7-nav .nav-link:hover {
+    color: var(--bs-body-color);
+    opacity: 0.8;
+  }
+  
+  .ezy__footer7-social li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  
+  .ezy__footer7-social li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .ezy__footer7-social li a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+    font-size: 25px;
+    opacity: 0.5;
+    transition: opacity 0.35s ease-in-out;
+  }
+  
+  .ezy__footer7-social li a:hover {
+    color: rgb(65, 123, 197) ;
+    opacity: 1;
+  }
+  
+  .ezy__footer7-quick-links li {
+    margin-bottom: 8px;
+  }
+  
+  .ezy__footer7-quick-links li a {
+    color: var(--bs-body-color);
+    opacity: 0.5;
+    text-decoration: none;
+    transition: color 0.35s ease-in-out;
+  }
+  
+  .ezy__footer7-quick-links li a:hover {
+    color: var(--bs-body-color);
+    opacity: 1;
+  }
+  
+  .ezy__footer7-copyright a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+  }
+  
+  .ezy__footer7 .form-control,
+  .ezy__footer7 .form-select {
+    min-height: 42px;
+    line-height: 35px;
+    border-color: transparent;
+    background: rgba(163, 190, 241, 0.14);
+    border-radius: 10px;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__footer7 .form-control:focus,
+  .ezy__footer7 .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: none;
+  }
+  </style>
+
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+
+  
+</body>
+</html>
